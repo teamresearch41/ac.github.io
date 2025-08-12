@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background: #f0f0f0;
+}
+
+.container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  width: 280px;
+  text-align: center;
+}
+
+#status.on {
+  color: green;
+}
+
+#status.off {
+  color: red;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s ease; /* Smooth hover/click animations */
+}
+
+.toggle {
+  background: #007bff;
+  color: white;
+}
+
+.plus {
+  background: #28a745;
+  color: white;
+}
+
+.minus {
+  background: #dc3545;
+  color: white;
+}
+
+.set-timer {
+  background: #0213ff;
+  color: white;
+}
+
+#temperature {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+#countdown {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Clicked effect */
+button.clicked {
+  transform: scale(0.95);
+  filter: brightness(85%);
+}
+
+/* Hover effect for nicer UI */
+button:hover {
+  filter: brightness(90%);
+}

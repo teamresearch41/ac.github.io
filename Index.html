@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AC Remote</title>
+    <link rel="stylesheet" href="Index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="status" class="off">AC is OFF</h2>
+
+      <button id="toggle-btn" class="toggle">OFF/ON</button>
+
+      <div id="temperature">18°C</div>
+
+      <div class="temp-buttons">
+        <button id="decrease-temp" class="minus">-</button>
+        <button id="increase-temp" class="plus">+</button>
+      </div>
+
+      <input type="number" id="timer-input" min="1" max="60" value="2" />
+      <button id="set-timer" class="set-timer">Set Timer</button>
+
+      <div id="countdown">Time: --:--</div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
